@@ -161,11 +161,11 @@ module.exports = class extends Component {
             <script src={my_cdn(url_for('/js/globalUtils.js'))}></script>
             {adsenseClientId ? <script data-ad-client={adsenseClientId}
                 src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" async={true}></script> : null}
-            {hasLive2D ? <link rel="stylesheet" href={my_cdn(url_for('/live2d/waifu.css'))} /> : null}
-            {hasLive2D ? <script type="text/javascript" async={true} src={my_cdn(url_for('/live2d/autoload.js'))}></script> : null}
             {isValineComment ? <script async="" referrerpolicy="no-referrer" src="//cdn.jsdelivr.net/npm/leancloud-storage@3/dist/av-min.js"></script> : null}
             {isValineComment ? <script src="//unpkg.com/valine/dist/Valine.min.js"></script> : null}
             {isValineComment ? <script src={my_cdn(url_for('/js/md5.min.js'))}></script> : null}
+		    {hasLive2D ? <link rel="stylesheet" href={my_cdn(url_for('/live2d/waifu.css'))} /> : null}
+            {hasLive2D ? <script type="text/javascript" async={true} src={my_cdn(url_for('/live2d/autoload.js'))}></script> : null}
 
         </head>;
     }
